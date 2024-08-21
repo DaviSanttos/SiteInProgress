@@ -1,0 +1,88 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+   'header  header'
+   'sobre aside'
+   'main main'
+    ;
+
+    grid-template-rows: 8% 30% 70%;
+}
+
+header {
+  height: 3rem;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+#sobre {
+  grid-area: sobre;
+}
+
+aside {
+  grid-area: aside;
+}
+
+#servicos {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.servico {
+  background-color: aqua;
+  width: 30%;
+  height: 80%;
+}
+
+p, article{
+  margin: 1rem;
+}
+
+
+footer {
+  height: 2rem;
+}
+
+a {
+  list-style: none;
+  color: orange;
+}
+
+
+@media only screen and (max-width: 720px) {
+  body {
+    grid-template-areas: 
+    'header'
+    'sobre'
+    'aside'
+    'main'
+    ;
+
+    height: 100%;
+
+    grid-template-rows: 15% 45% 40% 120%;
+  }
+
+  #servicos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico {
+    width: 70%;
+  }
+
+  .servico:last-child {
+    margin-bottom: 3rem;
+  }
+
+}

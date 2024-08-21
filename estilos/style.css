@@ -1,0 +1,62 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  height: 84%;
+}
+
+#sobre article {
+  margin-top: 2rem;
+  height: 100%;
+  width: 45%;
+}
+
+#sobre {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  gap: 10px;
+}
+
+#cards {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 30%;
+  height: 20rem;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    height: 100%;
+  }
+  #sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sobre article {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .card:last-child {
+    margin-bottom: 3rem;
+  }
+}

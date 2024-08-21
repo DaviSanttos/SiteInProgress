@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilos/base.css">
+  <link rel="stylesheet" href="../estilos/menu.css">
+  <link rel="stylesheet" href="../estilos/contato.css">
+  <script src="../js/logica.js" defer></script>
+  <title>Contato</title>
+</head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Menu</a>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+          </li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form>
+          <article>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" required>
+          </article>
+          <article>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="tel" required>
+          </article>
+          <article>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" required>
+          </article>
+          <article>
+            <label for="dataNascimento"> Data Nascimento: </label>
+            <input type="date" id="data" required>
+          </article>
+          <article>
+            <label for="estadoCivil">Estado civil: </label>
+            <select name="estadoCivil" id="estadoCivil" required>
+              <option value="#">Escolha uma opção</option>
+              <option value="solteiro">Solteiro</option>
+              <option value="casado">Casado</option>
+              <option value="viuvo">Viúvo</option>
+            </select>
+          </article>
+          <article><button type="submit" onclick="enviarForm(this.form)">Enviar</button></article>
+        </form>
+      </section>
+    </main>
+    <footer>
+      consultoria
+    </footer>
+  </body>
+</html>
