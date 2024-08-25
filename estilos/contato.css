@@ -2,14 +2,10 @@ main {
   margin-top: 4rem;
 }
 
-body {
-  background-color: black;
-}
-
 form {
   display: flex;
-  background-color: red;
-  width: 60%;
+  background-color: #01488f;
+  width: 50%;
   height: 600px;
   flex-wrap: wrap;
   justify-content: center;
@@ -27,18 +23,19 @@ article:last-child{
 }
 
 article {
-  background-color: yellow;
+  border-radius: 15px;
   display: flex;
-  width: 51%;
+  width: 70%;
   justify-content: space-around;
   align-items: center;
 }
 
-input, select, button {
+input, select {
   height: 30%;
 }
 
-button {
+article button {
+  margin: 25px auto 0px;
   width: 6rem;
 }
 
@@ -57,6 +54,7 @@ button {
 
   form {
     width: 80%;
+    margin-bottom: 5rem;
   }
 
   article {
